@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=b">
+    <title>bos shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .box{
+            padding: 1rem;
+            margin: 1rem;
+            background: coral;
+            color: aliceblue;
+
+
+           /* offset-x | offset-y | color */
+           box-shadow:10px 10px teal ;
+            /* offset-x | offset-y | blur- radius |color */
+            box-shadow:10px 10px 20px teal ;
+             /* negative value  */
+             box-shadow:-5px -5px 10px teal ;
+             /* offset-x | offset-y | blur- radius | spread- radius |color */
+             box-shadow:5px 5px 10px 1px rgba(0, 0, 0, 0.5) ;
+            /* inset | offse-x| offset-y|color|   */
+            box-shadow: inset -3px -3px teal;
+            /* multiple shadow  */
+            box-shadow: 3px 3px teal, -3px -3px blue;
+        
+                
+            
+        }
+        *{
+            
+            font-size: 18px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+        .flex{
+            display: flex;
+
+        }
+        .pan{
+            margin: 10px 10px;
+            padding: 5px 5px;
+            color: #fff;
+            background:aquamarine ;
+            box-shadow: 5px 5px 2px antiquewhite;
+
+        }
+        h1{
+            
+            font-size: 3rem;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .a{
+            /* h-shadow| v-shadow| color */
+            text-shadow: 0.2rem 0.2rem antiquewhite ;
+        }
+        h1.b{
+            /* h-shadow| v-shadow|blur| color */
+            text-shadow: 0.4rem .4rem 0.5rem steelblue;
+
+        }
+        h1.c{
+            /* white text */
+            color: #fff;
+            text-shadow: 00.4rem 0.4rem 1rem steelblue;
+        }
+        h1.d{
+            /* negative valiue */
+            text-shadow: -0.2rem -0.2rem 0.5rem steelblue;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="flex">
+        <div class="pan">
+            <h3>SYSTEM</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores excepturi, fuga magnam non nemo repellendus!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, itaque eum illo velit veniam consectetur?
+
+            </p>
+        </div>
+        <div class="pan">
+            <h3>SYSTEM</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores excepturi, fuga magnam non nemo repellendus!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, itaque eum illo velit veniam consectetur?
+
+            </p>
+        </div>
+        <div class="pan">
+            <h3>SYSTEM</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores excepturi, fuga magnam non nemo repellendus!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, itaque eum illo velit veniam consectetur?
+
+            </p>
+            
+        </div>
+    </section>
+    <section>
+        <h1 class="a">WELCOME TO INNO-TOUCH</h1>
+        <h1 class="b">WELCOME TO INNO-TOUCH</h1>
+        <h1 class="c">WELCOME TO INNO-TOUCH</h1>
+        <h1 class="d">WELCOME TO INNO-TOUCH</h1>
+
+    </section>
+
+
+
+
+
+
+
+
+
+    <div class="container">
+       <div class="box">
+        <h3>FAMILY</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis libero iusto vitae odio officiis? Maxime voluptatem minus corrupti soluta fuga alias dolorem maiores nostrum, molestiae consequuntur voluptate odit velit sit.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam illum necessitatibus voluptas, nisi, deleniti quo tempora, natus incidunt iure ipsam harum cupiditate voluptatem soluta quidem. Eveniet unde et id labore?
+            
+        </p>
+       </div>
+       <div class="box">
+        <h3>FAMILY</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis libero iusto vitae odio officiis? Maxime voluptatem minus corrupti soluta fuga alias dolorem maiores nostrum, molestiae consequuntur voluptate odit velit sit.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam illum necessitatibus voluptas, nisi, deleniti quo tempora, natus incidunt iure ipsam harum cupiditate voluptatem soluta quidem. Eveniet unde et id labore?
+
+        </p>
+       </div>
+       <div class="box">
+        <h3>FAMILY</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis libero iusto vitae odio officiis? Maxime voluptatem minus corrupti soluta fuga alias dolorem maiores nostrum, molestiae consequuntur voluptate odit velit sit.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam illum necessitatibus voluptas, nisi, deleniti quo tempora, natus incidunt iure ipsam harum cupiditate voluptatem soluta quidem. Eveniet unde et id labore?
+
+        </p>
+       </div>
+        
+    </div>
+    
+</body>
+</html>

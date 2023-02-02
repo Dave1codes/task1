@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>minmax</title>
+    <style>
+        .book{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+            
+        }
+        .item{
+            font-size: 18px;
+            font-weight: bold;
+            border: 1px #ccc solid;
+
+        }
+
+    </style>
+</head>
+<body>
+ <div class="book">  
+    <div class="item">item</div>
+    <div class="item">item</div>
+    <div class="item">item</div>
+    <div class="item">item</div>
+</div>
+
+    
+</body>
+</html>

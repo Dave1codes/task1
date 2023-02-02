@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links and buttons</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: rgb(0, 217, 255);
+            text-decoration:none ;
+        }
+        a:hover{
+            color: #00f;
+        }
+        /* a:visited{
+            color:aqua
+        } */
+        a:active{
+            color: #0f0;
+        }
+        .btn{
+            background: #4c6ca0;
+            color: #fff;
+            border: none;
+            font-size: 16px;
+            padding: 10px 20px;
+            border-radius:5px ;
+            cursor: pointer;
+        }
+        .btn:hover{
+            color: rgb(0, 217, 255);
+            background: #446190;
+        }
+        div p{
+            background-color: aliceblue;
+            /* using div < p it select the paragragh that is directly to the div */
+            /* to select a p after a div use div + p  */
+        }
+        div + p{
+            background-color: aliceblue;
+            color: #446190;
+        }
+        a[target]{
+            background-color: #00f;
+            color: azure;
+        }
+        /* specific line attribute */
+        input[type='text'],
+        input[type='email']{
+            font-size: 50px;
+        }
+        .p{
+            list-style: none;
+            border: 2px grey solid;
+            border-radius: 10px;
+            padding: 20px;
+            width: 50%;
+/* the normal size for ont is 16px */
+        }
+        .p li{
+            font-size: 18px;
+            line-height: 2em;
+            border-bottom: dotted 2px #4c6ca0;
+        }
+        .p li :last-child{
+            border: none;
+        }
+        .nav{
+            list-style: none;
+            border: 2px #446190 solid;
+            line-height: 2em;
+            border-radius: 5px;
+            
+            margin: 0;
+            padding: 0;
+            background: #4c6ca0;
+            overflow: auto;
+            /* the overflow helps regain the background color after it collapese using the float cmd
+             */
+            
+        }
+        .nav li{
+            float: left;
+        
+
+        }
+        /* it actually the display cmd that helps provide invisible box then help space the  ilinks */
+        .nav li a{ 
+            display: block;
+            color: #fff;
+            font-size: 18px;
+            padding: 10px 20px;
+            
+        }
+        .nav li a:hover{
+            color: #f4f4f4;
+            background-color: #446190;
+        }
+    
+
+
+    </style>
+</head>
+<body>
+    <ul class="p">
+        <li> <a href="#">HOME</a></li>
+        <li><a href="#">CONTACT</a></li>
+        <li><a href="#">POS</a></li>
+        <li><a href="#">WHITEPAPER</a></li>
+    </ul>
+
+    <br>
+    <ul class="nav">
+        <li> <a href="#">HOME</a></li> 
+        <li><a href="#">CONTACT</a></li>
+        <li><a href="#">POS</a></li>
+        <li><a href="#">WHITEPAPER</a></li>
+    </ul>
+    <br>
+   <a class="btn" href="#">HOME</a><br><br>
+   <button class="btn">SUBMIT</button>
+ <button class="btn">submit</button><br><br>
+  <label for="submit">wagwan</label>
+ <input type="submit" value="wagwan">
+ <div>
+
+    <p>best ecosystem in the space</p>
+    <ul>
+        <li>APTOS</li>
+        <li><p>optimium</p></li>
+        <li>cronos</li>
+    </ul>
+    <p>best ecosystem to watch out for</p>
+ </div>
+ <p>who knows when bitoin was found</p>
+    
+ <a href="#">cronos</a> <br> <a href="#">optimum</a>
+ <br> <a href="http://aptos.com" target="_blank">Aptos</a>
+ <p><a href="www.com" target="_blank"><button>sign up</button></a></p>
+  <!-- the target attribite is used to redirect to another page -->
+  <br><br>
+  <form >
+    <input type="text" placeholder="namne">
+  
+    <input type="email" placeholder="email">
+  
+    <input type="numner" placeholder="numnber"> <br>
+    <button>submit</button> or <input type="submit" value="submit">
+
+
+  </form>
+ </body>
+</html>

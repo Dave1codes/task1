@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nth child</title>
+    <style>
+        li{
+            padding: 0.25rem;
+            margin: 0.25rem;
+            list-style: none;
+        }
+        li:first-child{
+            background: red;
+        }
+        li:last-child{
+            background: red;
+        }
+        li:nth-child(3){
+            background: grey;
+        }
+        /* the 0 is the counter from the top */
+        li:nth-child(2n+0){
+            background: aquamarine;
+        }
+        li:nth-child(3n+7){
+            background: aliceblue;
+        }
+        li:nth-child(odd){
+            background: rebeccapurple;
+        }
+        .diafter:after{
+            content:'*';
+            color: rgb(42, 85, 165);
+            padding-left: 2px;
+
+        }
+        body{
+            font-size: 16px;
+            padding: 5px;
+            background: #333;
+            color: aliceblue;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        header{
+            align-items: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center
+            
+        }
+        header::before{
+            content: '';
+            background:url(../2017/t3.jpg )no-repeat center/cover;
+            opacity: 0.4;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+
+        }
+        header > h1{
+            font-size: 4rem;
+            margin: 1rem;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- <ul>
+        <!-- li{item $}*10 cheat code for listing -->
+        <!-- <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+        <li>item5</li>
+        <li>item6</li>
+        <li>item7</li>
+        <li>item8</li>
+        <li>item9</li>
+        <li>item10</li>
+       
+    </ul> --> -->
+    <div >
+        <label class="diafter" for="name">Name</label>
+        <input type="text">
+    </div> -->
+    <header>
+        <h1>wagwan</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in aut sint tempore consequuntur, doloribus nemo. Tenetur illo molestias sed suscipit, vero vel tempore nesciunt eaque facere, explicabo error minus?
+
+        </p>
+    </header>
+    <section>
+        <h3>puy</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam nihil voluptatem atque ex fugit optio blanditiis, quos illo consequatur quo debitis quis eaque molestias consectetur ducimus dignissimos amet saepe earum!
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium reiciendis expedita facilis beatae quam reprehenderit impedit, veniam quidem culpa id? Tenetur, quia? Quidem, aspernatur error ullam autem quibusdam illum fuga?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro consectetur provident consequuntur hic vero labore inventore fugit doloribus esse, nulla assumenda quaerat nemo incidunt numquam quidem molestiae ipsam quis mollitia?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic in minus ipsam dicta amet, numquam beatae fugiat. Sint aliquam nulla officiis perferendis veniam quisquam, neque, natus voluptatibus non dolores praesentium?
+
+        </p>
+    </section>
+    
+</body>
+</html>

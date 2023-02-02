@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid area</title>
+    <style>
+        .container{
+            
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'header header header'
+            'content content sidebr'
+            'box1 box2 box3'
+            "footer footer footer"
+
+
+        }
+        .header{
+            grid-area: header;
+            text-align: center;
+
+        }
+        .content{
+            grid-area: content;
+        }
+       
+        
+        .header,.sidebar,.content,.footer,.box1,.box2,.box3,.footer{
+            border: 1PX solid grey;
+            padding: 0.4rem;
+
+        }
+        .box1{grid-area: box1;}
+        .box2{grid-area: box2;}
+        .box3{grid-area: box3;}
+
+        .footer{
+            grid-area: footer;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+   <div class="container">
+            <header class="header">
+                <h1>my website</h1>
+            </header>
+            <section class="content">
+                <h3>welcome to my site</h3>
+            
+            
+            <p>Lorem ipsum dolor sit amet c
+                onsectetur adipisicing elit. Architecto 
+                maxime et vero eligendi facere vitae quod nostrum! Ratione rem voluptatem officiis quibusdam 
+                explicabo ex repellat nemo accusantium vitae ipsam soluta natus labore sapiente, aliquam iusto. Molestiae numquam aspernatur
+                , ut magni adipisci voluptatem nesciunt repellendus, laborum earum, maiores
+                delectus. Accusamus, et.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt,
+                 voluptatem voluptas ull
+                am labore eius necessitatibus!</p>
+                 
+            </section>
+            <aside class="sidebar">
+                <h3>CONTACT</h3>
+                <ul>
+                    <li>address</li>
+                    <li>Email; ogun@gmail.com</li>
+                    <li>number;0884849</li>
+
+                </ul>
+            </aside>
+        <div class="box1">
+            <h3>heading</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio blanditiis adipisci id sequi quia, ea laborum nihil cum in autem, vel praesentium distinctio! Esse tempore amet maiores obcaecati ratione soluta?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, est consequuntur? Unde adipisci tempore exercitationem esse voluptatem ad pariatur doloremque ut nulla! Facere praesentium ipsum cumque sapiente voluptatem ut nemo enim dolore nihil dolor, nulla unde rerum, 
+                magnam voluptatum adipisci?
+            </p>
+            
+        </div>
+        <div class="box2">
+            <h3>heading</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio blanditiis adipisci id sequi quia, ea laborum nihil cum in autem, vel praesentium distinctio! Esse tempore amet maiores obcaecati ratione soluta?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, est consequuntur? Unde adipisci tempore exercitationem esse voluptatem ad pariatur doloremque ut nulla! Facere praesentium ipsum cumque sapiente voluptatem ut nemo enim dolore nihil dolor, nulla unde rerum, 
+                magnam voluptatum adipisci?
+            </p>
+            
+        </div>
+        <div class="box3">
+            <h3>heading</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio blanditiis adipisci id sequi quia, ea laborum nihil cum in autem, vel praesentium distinctio! Esse tempore amet maiores obcaecati ratione soluta?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, est consequuntur? Unde adipisci tempore exercitationem esse voluptatem ad pariatur doloremque ut nulla! Facere praesentium ipsum cumque sapiente voluptatem ut nemo enim dolore nihil dolor, nulla unde rerum, 
+                magnam voluptatum adipisci?
+            </p>
+            
+        </div>
+        <footer class="footer">
+            <p>copyright &copy;2019</p>
+        </footer>
+</div> 
+</body>
+</html>

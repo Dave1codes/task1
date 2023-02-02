@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <style>
+       
+        
+        h1{
+            font-size: 50px;
+            text-align: center;
+        }
+        .container{
+            max-width: 960px;
+            margin:30px auto;
+        }
+        .red{
+            border: 1px blue solid;
+            padding: 10px ;
+            margin-bottom: 20px;
+            background-color: grey;
+            color:#fff;
+        }
+
+        
+        #wood{
+            float: right;
+            width: 30%;
+        }
+        #mattress{
+            float: left;
+            width: 68%;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        .clr{
+            clear: both;
+        }
+        
+        /* clr is put where in the identity that should not be floated
+        it helps separate the float and the one not to float */
+        
+    </style>
+</head>
+<body>
+   
+    <h1>float</h1>
+    <div class="container">
+    
+        <p>understanding floating and text alignmnt is very useful and importnace in every web page
+            let us llok at the boxs below
+        </p>
+        <div id="bed" class="red">
+            <h2>wagwan</h2>
+            <p>we all gonna make it is the full meankng of this terminology
+                in crypto space.
+            </p>
+        </div>
+        <div id="mattress" class="red">
+            <h2>wagwan</h2>
+            <p>we all gonna make it is the full meankng of this terminology
+                in crypto space.
+            </p>
+        </div>
+
+        <div id="wood" class="red">
+            <h2>wagwan</h2>
+            <p>we all gonna make it is the full meankng of this terminology
+                in crypto space.
+            </p>
+        </div>
+        <div class="clr"></div>
+            <div id="pako" class="red">
+                <h2>wagwan</h2>
+                <p>we all gonna make it is the full meankng of this terminology
+                    in crypto space.
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+    
+</body>
+</html>

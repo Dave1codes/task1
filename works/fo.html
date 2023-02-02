@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box
+        }
+        .con{
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.8;
+            
+            
+        }
+        .nav{
+            position: sticky;
+            font-size: 20px;
+            background: aquamarine;
+            border: 1px solid gray;
+            padding: 10px;
+            
+        }
+        .nav a{
+            text-decoration: none;
+            color: #fff;
+            
+        }
+        .nav a:hover{
+            color: aliceblue;
+        }
+        .nav li{
+            display: inline;
+            padding: 30px ;
+            
+        }
+        .main{
+            padding: 30px auto;
+            background:aliceblue;
+            border: 1px solid;
+            display: block;
+            max-width: 400px;
+            margin: 30px auto;
+
+        }
+        .b1{
+            display: block;
+            font-size: 10px;
+            padding: 5px;
+           
+        }
+        h1,p{
+            text-align: center;
+        }
+        input{
+            display: block;
+            width: 100%;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        input:active{
+            border: 1px;
+        }
+        button{
+            width: 95%;
+            text-align: center;
+            margin: 10px;
+            background: aquamarine;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid;
+            cursor: auto;
+            color: grey;
+        }
+        .new{
+            max-width: 250px;
+            margin: 0 auto;
+            
+            text-decoration: none;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="nav">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <h1><b>SIGN UP</b></h1>
+            <p>Let your journey begin</p>
+
+            <div class="b1" id="b12">
+                <label for="FIRST NAME">FIRST NAME</label>
+                <input type="text">
+            </div>
+            <div class="b1" id="b13">
+                <label for="LAST NAME">LAST NAME</label>
+                <input type="text">
+            
+            </div>
+            <div class="b1" id="b14">
+                <label for="USERNAME">USERNAME</label>
+                <input type="text" placeholder="username">
+
+            </div>
+            <div class="b1" id="b15">
+                <label for="EMAIL">EMAIL</label>
+                <input type="email">
+            </div>
+            <div class="b1" id="b16">
+                <label for="PASSWORD">PASSWORD</label>
+                <input type="text">
+            </div>
+            <aside>
+                <p id="aside"><a href="#" target="_blank"><button >SIGN UP</button</a></p>
+            </aside>
+        </div>
+        <div class="new"><p> coding should be a interest and always seek for knowlegde daily</p></div>
+        
+    </div>
+    
+</body>
+</html>

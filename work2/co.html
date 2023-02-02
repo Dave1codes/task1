@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid area</title>
+    <style>
+        .contain{
+            display: grid;
+            max-width: 1440px;
+            font-size: 20px;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            "sec1 sec1 sec1"
+            "sec2 sec3 sec3"
+            "sec33 sec33 sec44"
+            "sec4 sec4 sec4"
+            "footer footer footer";
+        }
+        .sec1{ grid-area: sec1;
+        text-align: center; color: aliceblue;}
+        .sec2{ grid-area: sec2;}
+        .sec3{ grid-area: sec3;}
+        .sec33{ grid-area: sec33;}
+        .sec44{ grid-area: sec44;}
+        .sec4{ grid-area: sec4;}
+        .footer{ grid-area: footer;}
+
+        .sec1, .footer, .sec2, .sec3, .sec33, .sec4, .sec44{
+            border: 1px solid grey;
+            grid-gap: 1rem;
+            background: rgb(0, 102, 255);
+            padding: 20px;
+        }
+        @media(max-width:960px) {
+            .contain{
+                grid-template-areas: 
+                "sec1"
+                "sec2"
+                "sec3"
+                "sec33"
+                "sec44"
+                "sec4"
+                "footer";
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contain">
+        <section class="sec1">
+            <h1>MACHALA CUTZ</h1>
+        </section> 
+        <div class="sec2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, voluptatem. Pariatur, cum numquam delectus minus aut iusto rem quam rerum aliquid u
+                t cupiditate suscipit amet voluptatibus eum hic, qui dolorum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis officiis facere itaque nihil repudiandae quaerat voluptatum vel fugit placeat ab? Placeat ab culpa eius! Tenetur deleniti debitis ab corrupti voluptatibus.
+                 Voluptatum molestias nisi sit!</p>
+        </div>
+        <main class="sec3">
+            <h2>OFFERS</h2>
+            <p>Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur,Lorem ipsum dolor sit amet consectetur adipisicing elit. Et tenetur excepturi voluptate vitae nihil quod, unde sit officia enim placeat magnam expedit
+                a dolores nam temporibus odio deleniti ipsum explicabo commodi!
+                 adipisicing elit. Laudantium molestias deleniti mollitia ab, tenetur asperiores, perferendis esse quam eos omnis h
+                ic iste doloribus impedit obcaecati, accusantium voluptate velit ex. Cumque.
+                 sit amet consectetur adipisicing elit. Unde quia culpa adipisci.</p>
+        </main>
+        <div class="sec33">
+            <h3>SAMPLES</h3>
+            <p> Lorem ipsum dolor, sit amet consectetur adipisici Lorem ipsum dolor sit amet con
+                sectetur adipisicing elit. Est reprehenderit omnis debitis sed praesentium doloremque! Quisquam molestiae id vel, tempora quo rerum c
+                onsequatur dicta esse dignissimos saepe error cumque ut.
+                ng elit. Ad modi facilis architecto saepe distinctio quibusdam nihil sit explica
+                bo quos quae, harum incidunt porro cumque sint officia dolorum veritatis commodi odit?</p>
+
+        </div>
+        <section class="sec44">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicin Lorem ipsum 
+                dolor sit amet consectetur adipisicing elit. Saepe aperiam ea natus neque repellendus voluptates sapiente quidem animi aspernatur molestiae, ab totam dolore
+                m, doloremque dolor voluptatem nam cumque illum consectetur.
+                g elit. Sint natus mollitia dolor est. Maxime sed minima molestias nobis veritatis autem?</p>
+        </section>
+        <aside class="sec4">
+            <h2>CONTACT</h2>
+            <ul>
+                <li>EMAIL:ogun@gmail.com</li>
+                <li>number:009090</li>
+                <li>3,addy chief greenfield estate</li>
+            </ul>
+
+        </aside>
+        <footer class="footer">
+            ade &copy;2020
+        </footer>
+    
+</body>
+</html>

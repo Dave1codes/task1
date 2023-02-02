@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>minmax</title>
+    <style>
+        .cool{
+            display: grid;
+            /* image gallery */
+            grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+            
+        }
+        .item{
+            text-align: center;
+            border: 1px solid grey;
+            font-weight: bold;
+            font-size: 18px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="cool">
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+    </div>
+    
+</body>
+</html>

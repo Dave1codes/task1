@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Targetted selector</title>
+    <style>
+        /* direct child to div  */
+        div > p {
+            background: grey;
+        }
+        /* directly after  */
+        div + p {
+            background: green;
+            color: azure;
+        }
+        a[target= _blank]{
+            color:grey ;
+            background: blue;
+        }
+        /* specific line input */
+        input[type=text],
+        input[type=email]{
+            width: 100%;
+            margin-bottom: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius porro accusantium mollitia in suscipit ipsum cumque quo saepe corrupti 
+            optio repellendus, magni fuga nostrum eaque? Omnis, eius. Veritatis, minima voluptas. </p>
+
+            <ul>
+               <li>team1</li>
+               <li><p>team2</p></li>
+               <li>team3</li>
+            </ul>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, officiis, nemo nam animi debitis iusto autem architecto consectetur, necessitatibus voluptatibus facere modi vel a laborum 
+            id porro nobis ullam? Voluptatem.</p>
+    </div>
+    <p>good things happen to good peopke</p>
+    <a href="#">Page 1</a> <a href="#" target="_self">page2</a> <a href="http://google.com" target="_blank">Google</a>
+    
+    <br><br>
+    <form >
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="email">
+        <input type="submit" value="submit" >
+    </form>
+
+</body>
+</html>

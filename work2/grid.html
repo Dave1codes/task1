@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        .gird{
+            display: grid;
+            /* grid-template-columns: 200px 200px 200px; */
+            /* grid-template-columns: 200px auto 200px; */
+            /* grid-template-columns: repeat(3, auto); */
+            /* grid-template-columns: 1fr 2fr 2fr;
+            grid-gap:1rem; */
+             grid-template-rows: 1fr 2fr 1fr; 
+            /* grid-template-columns: 2fr 2fr; */
+            grid-template-columns: repeat(3,2fr);
+            grid-auto-rows: 2fr;
+
+
+
+        }
+
+        .item{
+            background: antiquewhite;
+            padding: 5px;
+            border: #333 solid 1px;
+            font-size: 1.4rem;
+            font-weight: bold;
+            text-align: center;
+
+        }
+        /* main{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap:1.4rem;
+        } */
+
+        
+    </style>
+</head>
+<body>
+        <div class="gird">
+                <div class="item">item2</div>
+                <div class="item">item3</div>
+                <div class="item">item4</div>
+                <div class="item">item5</div>
+                <div class="item">item6</div>
+                <div class="item">item7</div>
+                <div class="item">item7</div>
+                <div class="item">item7</div>
+        </div>
+       <!-- <main>
+          <section>
+            <h3>wagwan</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil laborum
+                 blanditiis aliquid aperiam error eveniet? Sapiente aliquid quam inventore neque, quod vitae sequi a 
+                 libero ad impedit iure ipsam praesentium?
+            </p>
+          </section>
+          <aside>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse i
+                llum eaque harum? Ut, deserunt reiciendis.</p>
+            <ul>
+                <li>book</li>
+                <li>stew</li>
+                <li>fam</li>
+                <li>respect</li>
+            </ul>
+          </aside>
+     </main>      -->
+</body>
+</html>

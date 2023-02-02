@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gta</title>
+    <style>
+        body{
+            background: antiquewhite;
+            font-size: 18px;
+            
+
+        }
+        .h1{
+            text-align: center;
+            color:gray;
+            margin-bottom: 5px;
+        }
+        .head{
+            max-width: 960px;
+            margin: 20px auto;
+            grid-gap: 7px;
+            display: grid;
+                grid-template-areas:
+                "h1 h1" 
+                "p1 p1 "
+                "p3 p4 "
+                "p2 p5 "
+                "footer footer  ";
+        }
+        .h1, .p1, .p2, .p3, .p4, .p5, .footer{
+            border: 2px solid grey;
+            background: #fff;
+            padding: 10px;
+             
+        }
+       
+        .h1{grid-area: h1;}
+        footer{grid-area: footer;}
+        .p1{grid-area: p1;}
+        .p2{grid-area: p2;}
+        .p3{grid-area: p3;}
+        .p4{grid-area: p4;}
+        .p5{grid-area: p5;}
+
+        @media(max-width:760px){
+            .head{
+                grid-template-areas: 
+                "h1"
+                "p1"
+                "p2"
+                "p3"
+                "p4"
+                "p5"
+                "footer"
+                ;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="head">
+        <div class="h1">
+            <h1>WHO AM I?</h1>
+        </div>
+        <div class="p1">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas voluptatum est officiis. Quos u
+            llam di
+                cta aut temporibus, molestias nihil maiores commodi eos. Aliquam minima quae hic opti
+                o odio esse a! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi delectus fuga, alia
+                s laudantium molestiae, harum perferendis iste consequatur explicabo exercitation
+                em minus iure? Nobis reprehenderit facilis labore! Autem, reiciendis perferendis. Commodi?</p>
+        </div>
+        <div class="p2">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi maiores 
+                perferendis laboriosam possimus perspiciatis, magni architecto impedit, temporibu
+                s animi itaque voluptate libero molestiae assumenda inventore dolor sunt, non eaque praesentium.</p>
+        </div>
+        <div class="p3">
+            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mi
+                nus, expedita eius ullam perspiciatis officia a eos aper
+                iam error atque minima amet illum excepturi sapiente. Error id maxime quod quibusdam animi!></p>
+        </div>
+        <div class="p4">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum fuga temporibus tenetur quae aliquam animi liber
+                o atque, aperiam id hic repellendus, eius quis rem numquam provident sit quisquam neque? Eius!</p>
+        </div>
+        <div class="p5">
+            <label for="CONTACT">CONTACT</label>
+        <select name="CONTACT" id="">
+            <option value="EMAIL">EMAIL</option>
+            <option value="TWITTER">TWITTER</option>
+            <option value="FACEBOOK"><a href="#">FB</a></option>
+        </select>
+        </div>
+        <div class="footer">
+            <aside>
+                &machala, 2022
+            </aside>
+        </div>
+</div>
+    
+</body>
+</html>

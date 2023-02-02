@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grind</title>
+    <style>
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            
+        }
+        .item:first-child{
+            grid-column: 1 /span 3;
+            grid-row: 1/ span 2;
+        }
+        .item:nth-child(4){
+            grid-column: 2/ span 3;
+            grid-row: 2/ span 2;
+        }
+        .item{
+            padding: 1.4rem;
+            font-size: 1.4rem;
+            text-align: center;
+            font-weight: bold;
+            border: 1px #333 solid;
+            background: antiquewhite;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="grid">
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+    </section>
+    
+</body>
+</html>

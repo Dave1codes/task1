@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task2</title>
+    <style>
+        body{
+            background: antiquewhite;
+        }
+        .nav li{
+            display: inline;
+            margin: 5px;
+        }
+        #drop{
+            display: flex;
+            float: right;
+            margin-right: 50px;
+            padding:5px 20px;
+            border-radius: 5px;
+        }
+        #new{
+            margin-bottom: 15px;
+            font-size: 13px;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        .main{
+            border: 2px solid grey;
+            width: 1000px;
+            height: 80px;
+            padding: 30px;
+            margin: 100px auto;
+            border-radius: 5px;
+            font-size: 18px;
+            padding-right: 100px;
+        }
+        .button{
+            
+            width: 50px;
+            background: skyblue;
+            color: #fff;
+            position: absolute;
+            top: 103px;
+            left: 620px;
+            border: 2px solid ;
+            
+           
+           
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="nav">
+            <ul>
+                <li><a href="#" target="_blank"><img src="../../image/qr-code-component-main/images/favicon-32x32.png" alt="image"></a></li>
+                <li id="new"><strong>NEW CRYPTO SPACE</strong>  </li>
+                <li> <select name="POLYGON" id="drop">
+                    <option value="ETH">ETH</option>
+                    <option value="APTOS">APTOS</option>
+                    <option value="SOL">SOL</option>
+                    <option value="FTM">FTM</option>
+                </select></li>
+            </ul>
+            <hr>
+        </nav>
+        <div class="main">
+            <p>Click the "Check" button. If your wallet address meets the conditions, you will see the Total Airdrop Amount non-zero data in the airdrop column below.
+                Check
+                </p>
+                <p class="button">
+                    <button class="button" value="check">check</button> 
+                </p>
+                
+        </div>
+    
+    </div>
+    
+</body>
+</html>

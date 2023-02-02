@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myform2</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            line-height: 1.8;
+            background: aquamarine;
+        }
+            
+        #body{
+            margin: 20px auto;
+            max-width: 400px;
+            /* border: 1px grey solid; */
+            /* padding: 10px; */
+            font-size: 20px;
+        }
+        .head{
+            text-align: center;
+        }
+        .fam{
+            display: block;
+            margin:20px auto ;
+        }
+        .form{
+            background: aliceblue;
+            padding: 20px;
+            display: block;
+            font-size: 16px;
+        }
+        .form input{
+            display: block;
+            border: 1px #333 solid;
+            border-radius: 5px;
+            padding: 10px;
+            width: 100%;
+        }
+         #po button{
+            background: limegreen;
+            border: #333 1px solid;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            font-size: 16px;
+            color: #fff;
+            
+        }
+        #po button:hover{
+            background: lime
+        }
+        a{
+            text-decoration: none;
+            color: lime
+        }
+        #ft{
+            text-align: center;
+        }
+        
+        #head li{
+            display: inline;
+            font-size: 20px;
+            padding: 30px;
+                    }
+        #head a{
+            color: aliceblue;
+        }
+        #head{
+            border:aliceblue 1px solid;
+            font-size: 20px;
+        }
+        
+        
+
+
+
+    </style>
+</head>
+<body>
+    <div>
+            <header >
+                <nav id="head">
+                    <ul>
+                        <li> <a href="#">HOME</a></li>
+                        <li> <a href="#">CONTACT</a></li>
+                        <li> <a href="#">ABOUT</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div id="body">
+                <form class="form" >
+                    <h1 class="head">sign up</h1>
+                    <p class="head">Get started with creating your new account</p>
+
+                    <div class="fam">
+                    <label for="first Name">First Name</label>
+                    <input type="text">
+                    <br>
+
+                    <label for="Last Name">Last Name</label>
+                    <input type="text">
+                    <br>
+                    <label for="Username">Username</label>
+                    <input type="text">
+                    <br>
+
+                    <label for="Email">Email</label>
+                    <input type="email">
+                    <br>
+
+                    <label for="Password">Password</label>
+                    <input type="Email">
+                    <br>
+
+                    <label for="Confirm Password">Confirm Password</label> 
+                    <input type="text">
+                    <div>
+
+                    <aside>
+                        <p id="po"><button type="submit"> Sign up</button></p>
+                        <p>By clickimg the sign up button, you have agree to our</p>
+                        <p> <a href="#">TERMS & CONDITIONS</a> and <a href="#">PRIVACY POLICY</a></p>
+                    </aside>
+                </form>
+                <footer>
+                    
+                </footer>
+            </div>
+            
+        <p id="ft"> Already created an account? <a href="#">Login</a> </p>
+    </div>
+</body>
+</html>
